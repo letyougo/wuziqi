@@ -1,0 +1,11 @@
+html{
+    font-size: 62.5%;
+}
+h3{
+    font-size: 2rem;
+    text-align: center;
+}
+canvas{
+    display: block;
+    box-shadow: -2px -2px 2px #efefef,5px 5px 5px #999999;
+}
