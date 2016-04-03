@@ -109,7 +109,7 @@ var drawPanel = (function (context) {
 
 var drawChess = function (context,i,j,blackOrWhite) {
     context.beginPath()
-    context.arc(x+i*r,x+j*r,13,0,2*Math.PI)
+    context.arc(x+i*r,x+j*r,9,0,2*Math.PI)
     context.closePath()
 
     var gradient = context.createRadialGradient(15+i*r+2,15+j*r-2,13,15+i*r+2,15+j*r-2,0)
@@ -252,12 +252,11 @@ chess.onclick = function (e) {
             if(winsData[i][j][k]){
                 AIWin[k]++
                 playerWin[i][j] = 6
+
                 if(AIWin[k] == 5){
-                    if(AIWin[k] == 5){
-                        over = true
-                        alert('愚蠢的人类，你还不是阿尔法苏的对手')
-                        return
-                    }
+                    over = true
+                    alert('愚蠢的人类，你还不是阿尔法苏的对手')
+                    return
                 }
             }
         }
