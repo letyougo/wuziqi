@@ -237,7 +237,7 @@ chess.onclick = function (e) {
 
                 if(playerWin[k] == 5){
                     over = true
-                    alert('你牛逼，我去告诉我主人小小苏，让他给我升级去')
+                    alert('你牛逼，我去叫我老板小小苏给我升级去！')
                     return
                 }
             }
